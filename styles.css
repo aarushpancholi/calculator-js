@@ -13,12 +13,12 @@ body {
     background-color: #121418e9;
     display: block;
     width: 22rem;
-    height: 40rem;
+    height: 35rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5.5rem;
+    margin-top: 9rem;
     border-radius: 20px;
     box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.1);
 }
@@ -26,7 +26,7 @@ body {
 #input-back {
     background-color: #2a2c31;
     display: flex;
-    margin-bottom: -9.25rem;
+    margin-bottom: -4.5rem;
     height: 25rem;
     width: 100%;
     flex-direction: column;
