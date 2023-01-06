@@ -42,14 +42,14 @@ boxes.forEach(box => {
                 update();
                 break;
             case "±":
-                if (num2.toString().length == 0 && op == null || op == undefined) {
-                    var intV = parseInt(num1);
-                    intV / intV === 1 ? num1 = intV - 2 * intV : num1 = intV + 2 * intV;
-                    update();
-                } else if (num2.toString().length != 0) {
-                    var intV = parseInt(num2);
+                if (num2 != 0) {
+                    var intV = parseFloat(num2);
                     intV / intV === 1 ? num2 = intV - 2 * intV : num2 = intV + 2 * intV;
                     document.getElementById("result").innerHTML = num1 + op + num2;
+                } else {
+                    var intV = parseFloat(num1);
+                    intV / intV === 1 ? num1 = intV - 2 * intV : num1 = intV + 2 * intV;
+                    update();
                 }
                 break;
             case "÷":
@@ -138,5 +138,7 @@ function appUpdate(numb1, numb2, op, result) {
     sqr = 1;
     op = null;
     activated = false;
+    dot2 = false;
+    finalResult = 0;
     update();
 }
