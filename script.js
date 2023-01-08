@@ -89,7 +89,6 @@ boxes.forEach(box => {
                                 sqr *= num1;
                             }
                             sqr = +sqr.toFixed(2);
-                            sqr = sqr.toPrecision(8);
                             appUpdate(num1, num2, op, sqr);
                     }
                 }
